@@ -1,4 +1,4 @@
-export  contacts: [
+export const contacts = [
     {
         name: 'Michele',
         avatar: './img/avatar_1.png',
