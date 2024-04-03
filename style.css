@@ -45,8 +45,22 @@
 
 .contacts{
     height: calc(100% - 190px);
+    overflow: auto;
+
 }
 
+.contact {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.contacts img {
+    width: 50px;;
+}
+
+.toolbar img {
+    width: 50px;
+}
 .d-bug {
     border: 1px solid red;
 }
