@@ -3,6 +3,7 @@
     --bg-primary: #009688;
     --bg-secondary: #DADBD3;
     --light-gray:#EAEAEA;
+    --light-blue: #86CEEE;
 }
 
 #app {
@@ -14,10 +15,12 @@
 
 #contact-list{
     width: 40%;
+
 }
 
 #chat-wrapper {
     width: 60%;
+
 }
 
 .toolbar {
@@ -27,6 +30,21 @@
 
 .chat {
     height: calc(100% - 140px);
+    overflow: auto;
+    padding: 2
+}
+
+.notification {
+    height: 70px;
+    background-color: var(--light-blue);
+}
+
+.searchbar {
+    height: 50px;
+}
+
+.contacts{
+    height: calc(100% - 190px);
 }
 
 .d-bug {
