@@ -4,6 +4,7 @@
     --bg-secondary: #DADBD3;
     --light-gray:#EAEAEA;
     --light-blue: #86CEEE;
+    --message-bg: #F3EEEA;
 }
 
 #app {
@@ -71,6 +72,7 @@
 .toolbar img {
     width: 50px;
 }
-.d-bug {
-    border: 1px solid red;
+
+.main-tool {
+    border-right: 1px solid lightgray;
 }
