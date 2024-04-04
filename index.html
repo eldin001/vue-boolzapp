@@ -79,7 +79,7 @@
                 <div class="toolbar d-flex align-items-center">
                     <div class="d-flex justify-content-center align-content-center w-25 "><i class="fa-regular fa-face-smile" style="color: #9a9a9a;"></i></div>
                     <div class="input-group "> 
-                        <input type="text" class="form-control w-75 " placeholder="Scrivi un messaggio" aria-label="Username"
+                        <input type="text" class="form-control w-75" v-model="messageText" @keyup.enter="sendMessage()" placeholder="Scrivi un messaggio" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                     <div class="d-flex justify-content-center align-content-center w-25 " ><i class="fa-solid fa-microphone" style="color: #9a9a9a;"></i></div>
