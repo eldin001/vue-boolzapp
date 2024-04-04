@@ -63,8 +63,13 @@
             </div>
             <!-- ! chat wrapper -->
             <div id="chat-wrapper" class="d-bug">
-                <div class="toolbar">
-                    <img class="img-fluid rounded-circle" src="img/avatar_1.jpg" alt="">
+                <div class="toolbar d-flex align-items-center justify-content-between  ">
+                    <img class="img-fluid rounded-circle m-3 " :src="'img/' + activeContact.avatar"  alt="">
+                    <div class="p-3 d-flex gap-3 ">
+                        <i style="color: #9a9a9a;" class="fa-solid fa-magnifying-glass"></i>
+                        <i style="color: #9a9a9a;" class="fa-solid fa-paperclip"></i>
+                        <i style="color: #9a9a9a;" class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
                 </div>
                 <div class="chat">
                     <div class="d-flex " v-for="(msg, index) in activeContact.messages">
