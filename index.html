@@ -47,8 +47,7 @@
                     </div>
                 </div>
                 <div class="contacts">
-                    <div class="contact border-bottom-2 d-flex align-content-start "
-                        v-for="(contact, index) in contacts" :key="contact.id">
+                    <div class="contact border-bottom-2 d-flex align-content-start" :class="{'active': activeContactId === contact.id}" v-for="(contact, index) in contacts" :key="contact.id">
                         <div class="avatar">
                             <img class="img-fluid rounded-circle" :src="'img/' + contact.avatar" :alt="contact.name">
                         </div>
@@ -66,6 +65,12 @@
             <div id="chat-wrapper" class="d-bug">
                 <div class="toolbar"></div>
                 <div class="chat">
+                    <div v-for="(msg, index) in ">
+                        <div class="msg">ciao</div>
+                    </div>
+                    <div>
+                        <div class="msg">ioejfow</div>
+                    </div>
                 </div>
                 <div class="toolbar d-flex align-items-center">
                     <div class="d-flex justify-content-center align-content-center w-25 "><i class="fa-regular fa-face-smile" style="color: #9a9a9a;"></i></div>

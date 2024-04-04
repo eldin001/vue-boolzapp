@@ -7,7 +7,10 @@ createApp({
     data() {
         return {
             contacts: contacts,
-
+            activeContactId: 1 
         }
+    },
+    methods: {
+        
     }
 }).mount('#app')

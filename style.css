@@ -32,7 +32,12 @@
 .chat {
     height: calc(100% - 140px);
     overflow: auto;
-    padding: 2
+    padding: 2;
+    background-image: url(img/mine.jpg);
+}
+
+.active {
+    background-color:red;
 }
 
 .notification {
@@ -75,4 +80,44 @@
 
 .main-tool {
     border-right: 1px solid lightgray;
+}
+
+.sent {
+	position: relative;
+	background: #00bd16;
+	border-radius: .4em;
+}
+
+.sent:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 36px solid transparent;
+	border-left-color: #00bd16;
+	border-right: 0;
+	margin-top: -36px;
+	margin-right: -36px;
+}
+
+.recived {
+	position: relative;
+	background: #00b0bd;
+	border-radius: .4em;
+}
+
+.recived:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 36px solid transparent;
+	border-right-color: #00b0bd;
+	border-left: 0;
+	margin-top: -36px;
+	margin-left: -36px;
 }
