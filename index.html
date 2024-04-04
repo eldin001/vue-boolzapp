@@ -65,16 +65,13 @@
             <div id="chat-wrapper" class="d-bug">
                 <div class="toolbar"></div>
                 <div class="chat">
-                    <div v-for="(msg, index) in ">
-                        <div class="msg">ciao</div>
-                    </div>
-                    <div>
-                        <div class="msg">ioejfow</div>
+                    <div class="d-flex " v-for="(msg, index) in activeContact.messages">
+                        <div class="msg" :class="msg.status">{{msg.message}}</div>
                     </div>
                 </div>
                 <div class="toolbar d-flex align-items-center">
                     <div class="d-flex justify-content-center align-content-center w-25 "><i class="fa-regular fa-face-smile" style="color: #9a9a9a;"></i></div>
-                    <div class="input-group ">
+                    <div class="input-group "> 
                         <input type="text" class="form-control w-75 " placeholder="Scrivi un messaggio" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
