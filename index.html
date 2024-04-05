@@ -47,7 +47,9 @@
                     </div>
                 </div>
                 <div class="contacts">
-                    <div class="contact border-bottom-2 d-flex align-content-start" :class="{'active': activeContactId === contact.id}" v-for="(contact, index) in contacts" :key="contact.id" @click="activeContactId = contact.id">
+                    <div class="contact border-bottom-2 d-flex align-content-start"
+                        :class="{'active': activeContactId === contact.id}" v-for="(contact, index) in contacts"
+                        :key="contact.id" @click="activeContactId = contact.id">
                         <div class="avatar">
                             <img class="img-fluid rounded-circle" :src="'img/' + contact.avatar" :alt="contact.name">
                         </div>
@@ -63,8 +65,12 @@
             </div>
             <!-- ! chat wrapper -->
             <div id="chat-wrapper" class="d-bug">
-                <div class="toolbar d-flex align-items-center justify-content-between  ">
-                    <img class="img-fluid rounded-circle m-3 " :src="'img/' + activeContact.avatar"  alt="">
+                <div class="toolbar d-flex align-items-center justify-content-between ">
+                    <div class="d-flex align-items-center ">
+                        <img class="img-fluid rounded-circle m-3 " :src="'img/' + activeContact.avatar" alt="">
+                        <h6>{{activeContact.name}}</h6>
+                        <p>{{activeContact.messages.date}}</p>
+                    </div>
                     <div class="p-3 d-flex gap-3 ">
                         <i style="color: #9a9a9a;" class="fa-solid fa-magnifying-glass"></i>
                         <i style="color: #9a9a9a;" class="fa-solid fa-paperclip"></i>
@@ -77,12 +83,14 @@
                     </div>
                 </div>
                 <div class="toolbar d-flex align-items-center">
-                    <div class="d-flex justify-content-center align-content-center w-25 "><i class="fa-regular fa-face-smile" style="color: #9a9a9a;"></i></div>
-                    <div class="input-group "> 
-                        <input type="text" class="form-control w-75" v-model="messageText" @keyup.enter="sendMessage()" placeholder="Scrivi un messaggio" aria-label="Username"
-                            aria-describedby="basic-addon1">
+                    <div class="d-flex justify-content-center align-content-center w-25 "><i
+                            class="fa-regular fa-face-smile" style="color: #9a9a9a;"></i></div>
+                    <div class="input-group ">
+                        <input type="text" class="form-control w-75" v-model="messageText" @keyup.enter="sendMessage()"
+                            placeholder="Scrivi un messaggio" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-                    <div class="d-flex justify-content-center align-content-center w-25 " ><i class="fa-solid fa-microphone" style="color: #9a9a9a;"></i></div>
+                    <div class="d-flex justify-content-center align-content-center w-25 "><i
+                            class="fa-solid fa-microphone" style="color: #9a9a9a;"></i></div>
                 </div>
             </div>
         </div>
